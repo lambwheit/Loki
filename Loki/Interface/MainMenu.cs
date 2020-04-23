@@ -13,7 +13,7 @@ namespace Loki.Interface {
             Options.Add(new Label(new string('=', 16)));
             
             Options.Add(new Button("Load config", sender => {
-                ConfigManager.Load(Misc.Prompt("Path to config file?", $"LokiConfig1.json"));
+                ConfigManager.Load(Misc.Prompt("Path to config file?", $"LokiConfig.json"));
                 _name.Text = ConfigManager.Settings.Name;
                 _author.Text = ConfigManager.Settings.Author;
                 _exePath.Text = ConfigManager.Settings.ExecutablePath;
