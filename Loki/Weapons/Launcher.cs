@@ -3,12 +3,13 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
-using Harmony;
+using HarmonyLib;
 using Loki.Configuration;
 
 namespace Loki.Weapons {
     static class Launcher {
-        static Launcher() => HarmonyInstance.Create("loki").PatchAll(typeof(Launcher).Assembly);
+
+        static Launcher() => new Harmony("loki").PatchAll(typeof(Launcher).Assembly);
 
         internal static Assembly RealAssembly;
         
@@ -16,7 +17,7 @@ namespace Loki.Weapons {
             var asm = TryLoadAssembly();
             if (asm == null)
                 return;
-
+            
             RealAssembly = asm;
             Console.Clear();
             Console.Title = string.Empty;

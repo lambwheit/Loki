@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using Harmony;
+//using Harmony;
+using HarmonyLib;
 using Loki.Configuration;
 
 namespace Loki.Weapons {
