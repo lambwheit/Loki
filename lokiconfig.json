@@ -1,0 +1,13 @@
+{
+	"Name": "C.to Auth Bypass",
+	"Author": "Anubis",
+	"ExecutablePath": "crackmebaby.exe",
+	"Responses" : [
+		{
+			"Type": "Text",
+			"Text" : "{\"auth\":true,\"username\":\"NULLED.TO\",\"posts\":\"All\",\"likes\":\"All\",\"group\":\"0\"}",
+			"Name" : "Cracked.To AUTH",
+			"Url" : "cracked.to/auth.php"
+		}
+	]
+}
